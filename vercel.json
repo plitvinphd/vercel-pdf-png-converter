@@ -1,0 +1,17 @@
+```json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/convert_pdf.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/convert-pdf",
+      "dest": "/api/convert_pdf.py"
+    }
+  ]
+}
+```
